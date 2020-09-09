@@ -1,13 +1,13 @@
 import React from "react";
 import "./App.css";
 import CardNavbar from './components/navbar/navbar';
-import NasaCard from './components/card/NasaCard';
+import NasaInfo from './components/card/NasaInfo'
 
 function App() {
   return (
     <div className="App">
      <CardNavbar />
-     <NasaCard />
+     <NasaInfo />
     </div>
   );
 }

@@ -5,9 +5,9 @@ const CardNavbar = () => {
 
     return(
         <div>
-            <navbar className="navbar">
+            <nav className="navbar">
                 <h1>Nasa's Photo of The Day</h1>
-            </navbar>
+            </nav>
         </div>
     )
 }
