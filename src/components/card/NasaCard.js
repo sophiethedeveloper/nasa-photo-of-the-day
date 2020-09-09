@@ -13,7 +13,7 @@ const NasaCard = (props) => {
           alt="The Universe"
           src={photo}
         />
-        <p>{description}</p>
+        <p className='description'>{`Description: ${description}`}</p>
         <p className="date">{date}</p>
         <p className="credit">{credit}</p>
       </div>
