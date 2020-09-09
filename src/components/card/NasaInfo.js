@@ -11,8 +11,8 @@ const NasaInfo = () => {
       .get("https://api.nasa.gov/planetary/apod?api_key=U1KygYvkDTXp4IPiYPEWSvjOECPdxDqyXoE2eaEu")
       .then((res) => {
         console.log('response', res)
-        const info = res.data
-        setInfo(info)
+        // const info = res.data
+        setInfo(res.data)
       })
       .catch((error) => console.log("Error!", error));
   }, []);
