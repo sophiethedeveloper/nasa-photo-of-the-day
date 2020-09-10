@@ -1,0 +1,11 @@
+.navbar {
+    color: #000000;
+    background-color: rgba(220, 220, 220, 0.2);
+    font-family: "Nanum Myeongjo", serif;
+    font-size: 1.2rem;
+    height: 16vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+

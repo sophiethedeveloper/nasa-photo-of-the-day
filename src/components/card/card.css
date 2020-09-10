@@ -1,0 +1,47 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    /* width: 100%; */
+  }
+  
+  .nasa-card {
+    font-family: "Nanum Myeongjo", serif;
+    background-color: rgba(220, 220, 220, 0.2);
+    color: black;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+    box-shadow: 0px 1px 6px -2px grey;
+  }
+  
+  
+  .nasa-image {
+    width: 45%;
+   
+  }
+
+
+  .date,
+  .credit {
+    display: flex;
+    
+    font-weight: bold;
+    padding: 15px;
+    margin: 20px;
+  }
+
+  .title{
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .description {
+    font-size: 14px;
+    margin-top: 20px;
+  }
