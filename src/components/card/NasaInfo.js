@@ -6,16 +6,16 @@ const NasaInfo = (props) => {
   const { date } = props;
   const [info, setInfo] = useState([]);
 
-    // useEffect(() => {
-    //   axios
-    //     .get(`https://api.nasa.gov/planetary/apod?api_key=U1KygYvkDTXp4IPiYPEWSvjOECPdxDqyXoE2eaEu&date=${date}`)
-    //     .then((res) => {
-    //       console.log('response', res)
-    //     //   const info = res.data
-    //       setInfo(res.data)
-    //     })
-    //     .catch((error) => console.log("Error!", error));
-    // }, [date]);
+    useEffect(() => {
+      axios
+        .get(`https://api.nasa.gov/planetary/apod?api_key=U1KygYvkDTXp4IPiYPEWSvjOECPdxDqyXoE2eaEu&date=${date}`)
+        .then((res) => {
+          console.log('response', res)
+        //   const info = res.data
+          setInfo(res.data)
+        })
+        .catch((error) => console.log("Error!", error));
+    }, [date]);
 
   return (
     <div>

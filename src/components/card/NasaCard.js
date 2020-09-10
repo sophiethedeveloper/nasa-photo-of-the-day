@@ -3,9 +3,9 @@ import "./card.css";
 import styled from 'styled-components';
 
 const StyledDiv = styled.div`
-    font-family: 'Staatliches', cursive;
+    font-family: "Nanum Myeongjo", serif;
     background-color: rgba(220, 220, 220, 0.2);
-    color: #ffff;
+    color: black;
     width: 60%;
     display: flex;
     flex-direction: column;
@@ -24,7 +24,7 @@ const StyledDiv = styled.div`
   .credit {
     display: flex;
     font-weight: bold;
-    padding: 15px;
+    padding: 5px;
     margin: 20px;
   }
 
@@ -39,6 +39,7 @@ const StyledDiv = styled.div`
     justify-content: flex-start;
     font-size: 14px;
     margin-top: 20px;
+    font-weight: bold;
   }
 `;
 
