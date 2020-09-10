@@ -2,10 +2,33 @@ import React, { useState } from "react";
 import "./App.css";
 import CardNavbar from './components/navbar/navbar';
 import NasaInfo from './components/card/NasaInfo';
-// import DateDropDown from './components/card/Date'
+import styled from 'styled-components';
+
+const StyledForm = styled.div`
+  font-family: "Nanum Myeongjo", serif;
+  color: #ffffff;
+  margin-bottom: 50px;
+
+  #date {
+    font-family: "Nanum Myeongjo", serif;
+    width: 200px;
+  }
+
+  button {
+    color: purple;
+    font-size: 0.8em;
+    margin: 1em;
+    padding: 0.25em 1em;
+    border: 2px solid purple;
+    border-radius: 3px;
+  }
+
+`
+
 
 function App() {
 
+  {/* Stretch Challenge */}
   const dateFormat = new Date();
   const getDate = `${dateFormat.getFullYear()}-${dateFormat.getMonth() + 1}-${dateFormat.getDate()}`;
   console.log('get date', getDate)
@@ -31,14 +54,13 @@ function App() {
      {/* <DateDropDown /> */}
 
       {/* Stretch Challenge */}
-     <div>
+     <StyledForm>
             <h2>Pick a New Date!</h2>
             <form>
-            <label htmlFor="date">New Date: </label>
             <input type="date" id="date" value={formDate} onChange={handleChange}/>
             <button onClick={selectNewDate}>Select</button>
             </form>
-        </div>
+        </StyledForm>
     </div>
   );
 }

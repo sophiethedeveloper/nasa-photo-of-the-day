@@ -5,7 +5,7 @@ import styled from 'styled-components';
 const StyledDiv = styled.div`
     font-family: 'Staatliches', cursive;
     background-color: rgba(220, 220, 220, 0.2);
-    color: black;
+    color: #ffff;
     width: 60%;
     display: flex;
     flex-direction: column;
